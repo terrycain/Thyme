@@ -74,6 +74,7 @@
 #include "gamemessageparser.h"
 #include "gamestate.h"
 #include "gametext.h"
+#include "gamespy.h"
 #include "geometry.h"
 #include "globaldata.h"
 #include "hanimmgr.h"
@@ -3235,4 +3236,7 @@ void Setup_Hooks()
 
     // sequentialscript.h
     Hook_Any(0x00436980, SequentialScript::Xfer_Snapshot);
+
+    // Hook Gamespy
+    Hook_Function(0x008c9170, GamespyProtocol::ValueForKey);
 }

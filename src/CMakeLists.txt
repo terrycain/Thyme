@@ -347,6 +347,7 @@ set(GAMEENGINE_SRC
     game/network/gameinfo.cpp
     game/network/gameresultsthread.cpp
     game/network/gamemessageparser.cpp
+    game/network/gamespy.cpp
     game/network/ipenumeration.cpp
     game/network/lanapi.cpp
     game/network/lanapiinterface.cpp
